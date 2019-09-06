@@ -46,3 +46,46 @@ header("location: error.php");
 exit();
 }
 ?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Visualizar Registro</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+      
+  <style>.wrapper{
+   width: 500px;
+   margin: 0 auto;
+}
+        
+    </style>
+  </head>
+<body>
+    <div class="wrapper">
+       <div class="container-fluid">
+           <div class="row">
+               <div class="col-md-12">
+                    <div class="page-header">
+                         <h1>View Record</h1>
+                   </div>
+                   <div class="form-group">
+                        <label>Nome</label>
+                         <p class="form-control-static"><?php echo $row["nome"];?></p>
+                   </div>
+                       <div class="form-group">
+                        <label>Endereço</label>
+                         <p class="form-control-static"><?php echo $row["endereco"]; ?></p>
+                  </div>
+                   <div class="form-group">
+                    <label>Salário</label>
+                    <p class="form-control-static"><?php echo $row["salario"]; ?></p>
+             
+                  </div>
+                  <p><a href="index.php" class="btn btn-primary">Voltar</a></p>
+                 </div>
+              </div>
+            </div>
+          </div>
+    </body>
+</html>
+
